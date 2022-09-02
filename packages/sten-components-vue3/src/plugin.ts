@@ -1,5 +1,5 @@
 import { Plugin } from 'vue';
-import { applyPolyfills, defineCustomElements } from 'sten-components/loader';
+import { applyPolyfills, defineCustomElements } from 'dulanghai-sten-components/loader';
 
 export const ComponentLibrary: Plugin = {
   async install() {
