@@ -6,12 +6,12 @@ export const config: Config = {
   namespace: 'sten-components',
   outputTargets: [
     vue2OutputTarget({
-      componentCorePackage: "sten-components",
+      componentCorePackage: "dulanghai-sten-components",
       proxiesFile: "../sten-components-vue2/src/components.ts",
       // componentModels: vueComponentModels,
     }),
     vue3OutputTarget({
-      componentCorePackage: "sten-components",
+      componentCorePackage: "dulanghai-sten-components",
       proxiesFile: "../sten-components-vue3/src/components.ts",
       // componentModels: vueComponentModels,
     }),

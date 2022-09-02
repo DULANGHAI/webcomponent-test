@@ -3,7 +3,7 @@
 /* auto-generated vue proxies */
 import { defineContainer } from './vue-component-lib/utils';
 
-import type { JSX } from 'sten-components';
+import type { JSX } from 'dulanghai-sten-components';
 
 
 

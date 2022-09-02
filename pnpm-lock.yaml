@@ -3,7 +3,12 @@ lockfileVersion: 5.4
 importers:
 
   .:
-    specifiers: {}
+    specifiers:
+      '@types/node': ^18.7.14
+      typescript: ^4.8.2
+    devDependencies:
+      '@types/node': 18.7.14
+      typescript: 4.8.2
 
   packages/sten-components:
     specifiers:
@@ -23,6 +28,18 @@ importers:
       jest-cli: 27.5.1
       puppeteer: 10.4.0
       stencil-vue2-output-target: 0.0.4_@stencil+core@2.17.4
+
+  packages/sten-components-vue2:
+    specifiers:
+      dulanghai-sten-components: workspace:*
+      vue: 2.6.14
+    dependencies:
+      dulanghai-sten-components: link:../sten-components
+    devDependencies:
+      vue: 2.6.14
+
+  packages/sten-components/loader:
+    specifiers: {}
 
 packages:
 
@@ -690,6 +707,10 @@ packages:
 
   /@types/node/18.7.11:
     resolution: {integrity: sha512-KZhFpSLlmK/sdocfSAjqPETTMd0ug6HIMIAwkwUpU79olnZdQtMxpQP+G1wDzCH7na+FltSIhbaZuKdwZ8RDrw==}
+    dev: true
+
+  /@types/node/18.7.14:
+    resolution: {integrity: sha512-6bbDaETVi8oyIARulOE9qF1/Qdi/23z6emrUh0fNJRUmjznqrixD4MpGDdgOFk5Xb0m2H6Xu42JGdvAxaJR/wA==}
     dev: true
 
   /@types/prettier/2.7.0:
@@ -2761,6 +2782,12 @@ packages:
       is-typedarray: 1.0.0
     dev: true
 
+  /typescript/4.8.2:
+    resolution: {integrity: sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
   /unbzip2-stream/1.3.3:
     resolution: {integrity: sha512-fUlAF7U9Ah1Q6EieQ4x4zLNejrRvDWUYmxXUpN3uziFYCHapjWFaCAnreY9bGgxzaMCFAPPpYNng57CypwJVhg==}
     dependencies:
@@ -2808,6 +2835,10 @@ packages:
       '@types/istanbul-lib-coverage': 2.0.4
       convert-source-map: 1.8.0
       source-map: 0.7.4
+    dev: true
+
+  /vue/2.6.14:
+    resolution: {integrity: sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==}
     dev: true
 
   /w3c-hr-time/1.0.2:
